@@ -1,0 +1,31 @@
+﻿<Application x:Class="WpfDemoApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfDemoApp"
+             StartupUri="Assignment/AssignmentApp1Window.xaml">
+    <!--StartupUri="Events/TunnelingEventWindow.xaml">-->
+    <Application.Resources>
+        <!--Application Level Style Sheet-->
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="ALinearBrush1" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Blue" Offset="0"/>
+                <GradientStop Color="Cyan" Offset=".25"/>
+                <GradientStop Color="Crimson" Offset=".50"/>
+                <GradientStop Color="Green" Offset=".75"/>
+                <GradientStop Color="Yellow" Offset="1"/>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="ALinearBrush2" StartPoint=".5,0" EndPoint=".5,1">
+                <GradientStop Color="Orange" Offset="0"/>
+                <GradientStop Color="White" Offset=".5"/>
+                <GradientStop Color="Green" Offset="1"/>
+            </LinearGradientBrush>
+            
+            <!--Add Extra Files in Resource Dictionary which are maintained in different Resource dictionary file-->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Assets/DemoDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+         
+    </Application.Resources>
+</Application>
